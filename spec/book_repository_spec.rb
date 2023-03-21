@@ -18,11 +18,11 @@ RSpec.describe BookRepository do
 
         expect(books[0].id).to eq '1'
         expect(books[0].title).to eq 'Mrs Dalloway'
-        expect(books[0].author_name).to eq 'Virginia Woolf'
+        expect(books[0].author).to eq 'Virginia Woolf'
 
         expect(books[1].id).to eq '2'
         expect(books[1].title).to eq 'Dracula'
-        expect(books[1].author_name).to eq 'Bram Stoker'
+        expect(books[1].author).to eq 'Bram Stoker'
     end
     it 'returns a specific book' do
         repo = BookRepository.new
@@ -30,6 +30,6 @@ RSpec.describe BookRepository do
 
         expect(book.id).to eq '1'
         expect(book.title).to eq 'Mrs Dalloway'
-        expect(book.author_name).to eq 'Virginia Woolf'
+        expect(book.author).to eq 'Virginia Woolf'
     end
 end
